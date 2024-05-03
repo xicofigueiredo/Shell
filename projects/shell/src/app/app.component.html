@@ -1,0 +1,13 @@
+<div class="page-wrapper">
+
+  <a href="/" class="title-link">
+    <h1>{{ title }}</h1>
+  </a>
+  <nav>
+    <button (click)="navigateToProjetos()">Go to ProjetosPage</button>
+    <button (click)="navigateToHolidays()">Go to HolidaysPage</button>
+    <button (click)="navigateToColaborators()">Go to Colaborators</button>
+  </nav>
+  <router-outlet></router-outlet>
+
+</div>
