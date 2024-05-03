@@ -27,7 +27,7 @@ export class AppComponent {
   }
 
   navigateToHolidays() {
-    this.router.navigate(['/Mudar']);
+    this.router.navigate(['/Holiday']);
   }
 
 

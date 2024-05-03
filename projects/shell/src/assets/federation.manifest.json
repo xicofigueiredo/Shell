@@ -1,3 +1,4 @@
 {
-	"remote": "http://localhost:4201/remoteEntry.json"
+	"remote": "http://localhost:4201/remoteEntry.json",
+	"Holiday": "http://localhost:4201/remoteEntry.json"
 }

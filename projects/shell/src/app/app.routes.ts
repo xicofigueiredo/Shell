@@ -14,5 +14,11 @@ export const routes: Routes = [
     loadChildren: () =>
       loadRemoteModule('remote', './routes').then((m) => m.APP_ROUTES),
   },
+  {
+    path: 'Holiday',
+    // loadChildreas instead of loadComponent !!!
+    loadChildren: () =>
+      loadRemoteModule('Holiday', './holidayModule').then((m) => m.HolidayMainModule),
+  },
 
 ];
