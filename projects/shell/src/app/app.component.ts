@@ -35,4 +35,8 @@ export class AppComponent {
 
 
   title = 'Projeto/Frontend';
+
+  navigateToAssociations() {
+    this.router.navigate(['/association']);
+  }
 }
