@@ -9,10 +9,10 @@ export const routes: Routes = [
     pathMatch: 'full',
   },
   {
-    path: 'remote',
+    path: 'project',
     // loadChildreas instead of loadComponent !!!
     loadChildren: () =>
-      loadRemoteModule('remote', './routes').then((m) => m.APP_ROUTES),
+      loadRemoteModule('project', './projectModule').then((m) => m.ProjectMainModule),
   },
   {
     path: 'Holiday',

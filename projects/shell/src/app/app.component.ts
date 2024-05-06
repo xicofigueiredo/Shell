@@ -19,7 +19,7 @@ export class AppComponent {
   ngOnInit() {}
 
   navigateToProjetos() {
-    this.router.navigate(['/remote']);
+    this.router.navigate(['/project']);
   }
 
   navigateToColaborators() {
