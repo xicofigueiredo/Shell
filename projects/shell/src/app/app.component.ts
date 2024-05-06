@@ -23,7 +23,7 @@ export class AppComponent {
   }
 
   navigateToColaborators() {
-    this.router.navigate(['/Mudar']);
+    this.router.navigate(['/colaborator']);
   }
 
   navigateToHolidays() {
