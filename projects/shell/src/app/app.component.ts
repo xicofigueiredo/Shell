@@ -12,7 +12,7 @@ import { CommonModule } from '@angular/common'
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-
+  title = 'BSimple Academy';
 
   isNightMode: boolean | undefined;
   constructor(private router: Router) {}
@@ -30,13 +30,16 @@ export class AppComponent {
     this.router.navigate(['/Holiday']);
   }
 
-
-
-
-
-  title = 'Projeto/Frontend';
-
   navigateToAssociations() {
     this.router.navigate(['/association']);
+  }
+
+
+
+
+  isSidebarOpen = false;
+
+    toggleSidebar() {
+    this.isSidebarOpen = !this.isSidebarOpen;
   }
 }

@@ -1,14 +1,19 @@
-<div class="page-wrapper">
+<div class="container">
+  <div class="sidebar" [class.open]="isSidebarOpen">
+    <button class="close-sidebar-btn" (click)="toggleSidebar()">&times;</button>
+    <ul>
+      <li><button class="sidebar-button" (click)="navigateToProjetos()">Projetos</button></li>
+      <li><button class="sidebar-button" (click)="navigateToHolidays()">Holidays</button></li>
+      <li><button class="sidebar-button" (click)="navigateToColaborators()">Colaborators</button></li>
+      <li><button class="sidebar-button" (click)="navigateToAssociations()">Associations</button></li>
+    </ul>
+  </div>
 
-  <a href="/" class="title-link">
-    <h1>{{ title }}</h1>
-  </a>
-  <nav>
-    <button (click)="navigateToProjetos()">Go to ProjetosPage</button>
-    <button (click)="navigateToHolidays()">Go to HolidaysPage</button>
-    <button (click)="navigateToColaborators()">Go to Colaborators</button>
-    <button (click)="navigateToAssociations()">Go to Associations</button>
-  </nav>
-  <router-outlet></router-outlet>
-
+  <div class="content">
+    <div class="topbar">
+      <button class="open-sidebar-btn" (click)="toggleSidebar()">☰</button>
+      <h1 class="title">B<span class="artistic-letter">S</span>imple Academy</h1>
+    </div>
+    <router-outlet></router-outlet>
+  </div>
 </div>

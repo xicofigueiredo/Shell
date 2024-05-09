@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.topbar {
+  background: linear-gradient(to right, #4e73df, #224abe);
+  color: white;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.open-sidebar-btn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: linear-gradient(to bottom, #4e73df, #224abe);
+  transition: left 0.5s;
+  padding-top: 60px;
+  z-index: 1;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.close-sidebar-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 5px;
+}
+
+.sidebar-button {
+  background-color: #4e51df00;
+  color: white;
+  border: none;
+  padding: 15px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sidebar-button:hover {
+  background-color: #224abe;
+}
+
+.content {
+  flex: 1;
+  transition: margin-left 0.5s;
+}
+
+.sidebar.open + .content {
+  margin-left: 250px;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif; /* Using Roboto font */
+    font-size: 32px;
+    margin: 0;
+    padding: 10px;
+  }
+  
+  .artistic-letter {
+    font-family: 'Pacifico', cursive; /* Using Pacifico font for the 'S' */
+    font-size: 32px; /* Adjust size as needed */
+    color: #f39c12; /* Accent color for the 'S' */
+  }
