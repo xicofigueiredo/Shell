@@ -9,12 +9,6 @@ export const routes: Routes = [
     pathMatch: 'full',
   },
   {
-    path: 'project',
-    // loadChildreas instead of loadComponent !!!
-    loadChildren: () =>
-      loadRemoteModule('project', './projectModule').then((m) => m.ProjectMainModule),
-  },
-  {
     path: 'Holiday',
     // loadChildreas instead of loadComponent !!!
     loadChildren: () =>
@@ -32,5 +26,11 @@ export const routes: Routes = [
     // loadChildreas instead of loadComponent !!!
     loadChildren: () =>
       loadRemoteModule('association', './associationModule').then((m) => m.AssociationMainModule),
+  },
+  {
+    path: 'projeto',
+    // loadChildreas instead of loadComponent !!!
+    loadChildren: () =>
+      loadRemoteModule('projeto', './Component').then((m) => m.ProjetoMainModule),
   },
 ];

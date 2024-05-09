@@ -19,7 +19,7 @@ export class AppComponent {
   ngOnInit() {}
 
   navigateToProjetos() {
-    this.router.navigate(['/project']);
+    this.router.navigate(['/projeto']);
   }
 
   navigateToColaborators() {
@@ -33,9 +33,6 @@ export class AppComponent {
   navigateToAssociations() {
     this.router.navigate(['/association']);
   }
-
-
-
 
   isSidebarOpen = false;
 
