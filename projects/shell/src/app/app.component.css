@@ -10,7 +10,7 @@ body {
 }
 
 .topbar {
-  background: linear-gradient(to right, #4e73df, #224abe);
+  background: linear-gradient(to right, rgba(100, 100, 100, 0.89), #3a3a3a);
   color: white;
   display: flex;
   align-items: center;
@@ -29,10 +29,10 @@ body {
 .sidebar {
   position: fixed;
   top: 0;
-  left: -250px;
-  width: 250px;
+  left: -170px;
+  width: 170px;
   height: 100%;
-  background: linear-gradient(to bottom, #4e73df, #224abe);
+  background: linear-gradient(to bottom,  rgba(110, 110, 110, 0.788), #3a3a3a);
   transition: left 0.5s;
   padding-top: 60px;
   z-index: 1;
@@ -74,7 +74,7 @@ body {
 }
 
 .sidebar-button:hover {
-  background-color: #224abe;
+  background-color: #4d4d4d;
 }
 
 .content {
@@ -83,7 +83,7 @@ body {
 }
 
 .sidebar.open + .content {
-  margin-left: 250px;
+  margin-left: 170px;
 }
 
 .title {
@@ -91,10 +91,19 @@ body {
     font-size: 32px;
     margin: 0;
     padding: 10px;
+
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 2px; /* Add some letter spacing */
+    color: #fff; /* White color */
+    text-shadow: 1px 1px 0 rgb(54, 54, 54), 
+                 -1px -1px 0 rgb(54, 54, 54), 
+                 1px -1px 0 rgb(54, 54, 54), 
+                 -2px 2px 0 rgb(54, 54, 54); /* Outline effect */
   }
   
   .artistic-letter {
     font-family: 'Pacifico', cursive; /* Using Pacifico font for the 'S' */
-    font-size: 32px; /* Adjust size as needed */
+    font-size: 31.6px; /* Adjust size as needed */
     color: #f39c12; /* Accent color for the 'S' */
   }
+
