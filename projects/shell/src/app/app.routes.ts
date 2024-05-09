@@ -27,5 +27,10 @@ export const routes: Routes = [
     loadChildren: () =>
       loadRemoteModule('colaborator', './colaboratorModule').then((m) => m.ColaboratorMainModule),
   },
-
+  {
+    path: 'association',
+    // loadChildreas instead of loadComponent !!!
+    loadChildren: () =>
+      loadRemoteModule('association', './associationModule').then((m) => m.AssociationMainModule),
+  },
 ];
