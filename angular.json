@@ -73,10 +73,13 @@
 							"projects/shell/src/favicon.ico",
 							"projects/shell/src/assets"
 						],
-						"styles": [
-							"projects/shell/src/styles.css"
-						],
-						"scripts": []
+            "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "projects/shell/src/styles.css"
+            ],
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
 					},
 					"configurations": {
 						"production": {
