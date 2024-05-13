@@ -1,0 +1,35 @@
+/* Styles for the main content */
+.welcome-container {
+  text-align: center;
+  margin-top: 20vh;
+}
+
+.welcome-container h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.welcome-container img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.app-description {
+  font-size: 18px;
+  color: #555;
+  margin-top: 20px;
+}
+
+/* Styles for the footer */
+.footer {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.created-by {
+  font-size: 14px;
+  color: #777;
+  margin-top: 20px;
+}
