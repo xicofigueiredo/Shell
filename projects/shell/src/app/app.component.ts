@@ -34,6 +34,14 @@ export class AppComponent {
     this.router.navigate(['/association']);
   }
 
+  navigateToProjects() {
+    this.router.navigate(['/project']);
+  }
+
+  navigateToTrainings() {
+    this.router.navigate(['/training']);
+  }
+
   isSidebarOpen = false;
 
     toggleSidebar() {

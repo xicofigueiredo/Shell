@@ -33,4 +33,11 @@ export const routes: Routes = [
     loadChildren: () =>
       loadRemoteModule('projeto', './Component').then((m) => m.ProjetoMainModule),
   },
+  {
+    path: 'training',
+    // loadChildreas instead of loadComponent !!!
+    loadChildren: () =>
+      loadRemoteModule('training', './trainingModule').then((m) => m.TrainingMainModule),
+  },
+
 ];
