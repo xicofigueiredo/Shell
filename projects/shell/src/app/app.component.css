@@ -8,7 +8,7 @@ body {
   display: flex;
   height: 100vh;
   padding: 0 !important;
-  max-width: 1920px;
+  max-width: 100%;
 }
 
 .topbar {
@@ -97,12 +97,12 @@ body {
     text-transform: uppercase; /* Convert text to uppercase */
     letter-spacing: 2px; /* Add some letter spacing */
     color: #fff; /* White color */
-    text-shadow: 1px 1px 0 rgb(54, 54, 54), 
-                 -1px -1px 0 rgb(54, 54, 54), 
-                 1px -1px 0 rgb(54, 54, 54), 
+    text-shadow: 1px 1px 0 rgb(54, 54, 54),
+                 -1px -1px 0 rgb(54, 54, 54),
+                 1px -1px 0 rgb(54, 54, 54),
                  -2px 2px 0 rgb(54, 54, 54); /* Outline effect */
   }
-  
+
   .artistic-letter {
     font-family: 'Pacifico', cursive; /* Using Pacifico font for the 'S' */
     font-size: 31.6px; /* Adjust size as needed */
