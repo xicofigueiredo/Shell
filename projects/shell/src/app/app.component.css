@@ -109,3 +109,6 @@ body {
     color: #f39c12; /* Accent color for the 'S' */
   }
 
+  .title:hover {
+    cursor: pointer;
+  }
