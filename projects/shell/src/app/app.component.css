@@ -7,6 +7,8 @@ body {
 .container {
   display: flex;
   height: 100vh;
+  padding: 0 !important;
+  max-width: 1920px;
 }
 
 .topbar {
